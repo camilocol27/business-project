@@ -1,0 +1,387 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+body{
+	background: url(eight_horns/eight_horns.png);
+}
+
+.conteiner{
+	max-width: 960px;
+	max-height: 100%;
+	background: rgba(2, 2, 2, 0.87);
+	margin-top: -123px;
+}
+
+.logo{
+  width: 12%;
+  position: relative;
+  left: 117px;
+  bottom: 320px;
+  z-index: 1;
+  clear: both;
+}
+.resp{
+	display: none;
+}
+
+/*navigation*/
+
+nav{
+  background: #2176D6;
+  width: 100%;
+  height: 91px;
+  margin-top: -20px;
+  padding-top: 35px;
+  text-align: center;
+	
+}
+
+ul li{
+	display: inline;
+	margin-top: 20px;
+	padding: 15px;
+	border-bottom: 1px solid #fff;
+	
+}
+#navi{
+	text-decoration: none;
+	color:#fff;
+}
+span{
+	color:#e65c00;
+	padding-right: 15px;
+}
+#navi:hover{
+	color:#e65c00;
+
+}
+
+/*image*/
+
+
+img.image{
+	max-width: 100%;
+
+
+}
+
+.parragraf{
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	font-size: 45px;
+	padding: 65px;
+	margin: 20px;
+	position: relative;
+	top: -168px;
+	left: -123px;
+	background: #ecf0f1;
+	box-shadow: 5px 3px #7f8c8d;
+
+}
+#sub-title{
+	color: #2c3e50;
+	font-size: 25px;
+	font-family: sans-serif;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 50%;
+      margin:  auto;
+      clear: both;
+  }
+
+/*body*/
+.content{
+	margin-left: 200px;
+}
+#content{
+	
+  max-width: 100%;
+  width: 600px;
+  color: #9AFFEC;
+  padding-left: 0px;
+  font-size: 55px;
+  position: relative;
+   top: -885px;
+  left: 0px;
+}
+
+#red{
+	color:red;
+}
+.boxes{
+  float: left;
+  width: 253px;
+  height: 100%;
+  position: relative;
+  left: -118px	
+	
+}
+#descrip{
+	margin-top: 45px;
+	text-align: center;
+	color:#fff;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+img.box-one{
+	display: block;
+    width: 75%;
+    height: 75%;
+    margin: 15px auto;
+    cursor: pointer;
+   
+ }
+ img.box-two{
+	display: block;
+    width: 75%;
+    height: 75%;
+    margin: 15px auto;
+    cursor: pointer;
+   
+ }
+ img.box-three{
+	display: block;
+    width: 75%;
+    height: 75%;
+    margin: 15px auto;
+    cursor: pointer;
+   
+ }
+ img.box-four{
+	display: block;
+    width: 75%;
+    height: 75%;
+    margin: 15px auto;
+    cursor: pointer;
+   
+ }
+ img.box-five{
+	display: block;
+    width: 75%;
+    height: 75%;
+    margin: 15px auto;
+    cursor: pointer;
+   
+ }
+ img.box-six{
+	display: block;
+    width: 75%;
+    height: 75%;
+    margin: 15px auto;
+    cursor: pointer;
+   
+ }
+ img.box-seven{
+	display: block;
+    width: 75%;
+    height: 75%;
+    margin: 15px auto;
+    cursor: pointer;
+   
+ }
+ img.box-eight{
+	display: block;
+    width: 75%;
+    height: 75%;
+    margin: 15px auto;
+    cursor: pointer;
+   
+ }
+  img.box-nine{
+	display: block;
+    width: 75%;
+    height: 75%;
+    margin: 15px auto;
+    cursor: pointer;
+   
+ }
+.lightbox {
+	width: 600px;
+	height: 600px;
+	background: rgba(44, 62, 80, 0);
+    display: ;
+ 	position: fixed;
+  	top: 168px;
+ 	left: 300px;
+    width: 50%;
+    height: 50%;
+}
+
+.lightbox img {
+
+    position: fixed;
+ 	top: 269px;
+ 	right: 453px;
+  	margin-top: -127px
+    
+}
+
+.lightbox a{
+      position: fixed;
+	  top: 112px;
+	  right: 458px;
+	  font-family: monospace;
+	  font-weight: bold;
+	  font-size: 20px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  color: #FF0000;
+	  cursor: pointer;
+}
+.boxes:hover {
+	 background: rgba(150, 150, 150, 0.2);
+	 border: solid 1px #24FF00;
+	 -moz-box-shadow: 5px 5px 0px #999;
+	 -webkit-box-shadow: 5px 5px 0px #D2D2D2;
+	 box-shadow: 3px 3px 0px #F2F2F2;
+
+	}
+.icon-squere-cross{
+	background-color: #2980b9;
+	color: #c0392b;
+}
+
+
+
+
+/*footer*/
+
+#footer {
+	background: rgba(0, 0, 0, .8);
+	color: #3DF529;
+    margin: auto;
+    margin-top: 45px;
+	bottom: 0px;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+	clear: both;
+	
+}
+
+
+
+@media all and (max-width:550px ) {
+			header nav {
+				width:80%;
+				height:100%;
+				left:-100%;
+				margin:0;
+				position: fixed;
+				z-index: 16;
+
+			}
+
+			header nav ul li {
+				display:block;
+				float:none;
+				border-bottom:1px solid rgba(255,255,255, .3);
+			}
+
+		.logo{
+		    	width: 15%;
+			    position: relative;
+			    top: -138px;
+			    left: 35px;
+
+		}
+		.menu_bar {
+				display:block;
+				width:100%;
+				background:#ccc;
+			}
+		 
+		.menu_bar .bt-menu {
+				display:block;
+				padding:20px;
+				background:#024959;
+				color:#fff;
+				text-decoration:none;
+				font-weight: bold;
+				font-size:25px;
+				-webkit-box-sizing:border-box;
+				-moz-box-sizing:border-box;
+				box-sizing:border-box;
+				
+			}
+		 
+		.menu_bar span {
+				float:right;
+				font-size:40px;
+
+			}
+		.icon-menu{
+				display: block;
+			}
+		#content{
+		  width: 250px;
+		  font-size: 22px;
+		  margin-top: 28px;
+		  margin-left: -63px;
+		  position: relative;
+		  color: #FFFFFF;
+		  top: -380px;
+		}
+		.boxes{
+			margin-left: auto;
+			width: 312px;
+		}
+
+
+		.parragraf{
+			  width: 439px;
+			  height: 40%;
+			  text-align: center;
+			  font-size: 45px;
+			  padding: 10px;
+			  margin-left: -46px;
+			  position: relative;
+			  top: -100px;
+			  background: #ecf0f1;
+			  box-shadow: 0px 3px #7f8c8d
+
+		}
+	.lightbox {
+			width: 600px;
+			height: 600px;
+			background: rgba(44, 62, 80, 0);
+		    display: ;
+		 	position: fixed;
+		  	top: 168px;
+		 	left: 300px;
+		    width: 50%;
+		    height: 50%;
+}
+
+.lightbox img {
+
+		    position: fixed;
+		 	top: 269px;
+		 	right: 26px;
+		  	margin-top: -127px
+    
+}
+
+.lightbox a{
+	      position: fixed;
+		  top: 112px;
+		  right: 22px;
+		  font-family: monospace;
+		  font-weight: bold;
+		  font-size: 20px;
+		  text-decoration: none;
+		  text-transform: uppercase;
+		  color: #FF0000;
+		  cursor: pointer;
+}
+.boxes:hover {
+  		  background: rgba(150, 150, 150, 0.2);
+
+	}
+		}
