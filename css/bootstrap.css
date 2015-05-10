@@ -122,9 +122,10 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0;
+  color: black;
+  font: bold;
+  margin: 10px;
+  width: 200px;
 }
 button {
   overflow: visible;
@@ -273,10 +274,10 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 58px;
+  margin-bottom: 58px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #FF0000;
 }
 .sr-only {
   position: absolute;

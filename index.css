@@ -101,6 +101,7 @@ img.image{
   max-width: 100%;
   width: 600px;
   color: #9AFFEC;
+  text-shadow: 4px 4px black;
   padding-left: 0px;
   font-size: 55px;
   position: relative;
@@ -319,6 +320,9 @@ img.box-one{
 		.icon-menu{
 				display: block;
 			}
+
+
+			
 		#content{
 		  width: 250px;
 		  font-size: 22px;

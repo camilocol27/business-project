@@ -1,0 +1,173 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+body{
+	background: url(eight_horns/eight_horns.png);
+}
+
+/*navigation*/
+
+nav{
+  background: #2176D6;
+  width: 100%;
+  height: 91px;
+  margin-top: -20px;
+  padding-top: 35px;
+  text-align: center;
+	
+}
+.resp{
+	  display: none;
+}
+
+ul li{
+	display: inline;
+	margin-top: 20px;
+	padding: 15px;
+	border-bottom: 1px solid #fff;
+	
+}
+#navi{
+	text-decoration: none;
+	padding-left: 20px;
+	color:#fff;
+}
+#contact{
+	  background: rgba(192, 192, 192, 0.4);
+	  border-bottom-right:36px;
+	  color: #000000;
+	 
+	  font-family: sans-serif;
+	  font-weight: 700;
+	  padding: 30px;
+	  margin-left: 68px;
+}
+span{
+	color:#e65c00;
+	padding-right: 15px;
+}
+#navi:hover{
+	color:#e65c00;
+
+}
+#contacts{
+		  color: rgb(168, 20, 20);
+		  font-size: 51px;
+		  font-weight: bold;
+
+}
+img{
+	max-width: 100%;
+}
+#footer {
+	background: rgba(0, 0, 0, .8);
+	color: #3DF529;
+    margin: auto;
+    margin-top: 45px;
+	bottom: 0px;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+	clear: both;
+	
+}
+.squere{
+	width: 50%;
+	background: silver;
+	border: green;
+}
+.logos{
+	  float: left;
+	  display: inline;
+	  width: 5%;
+	  padding: 15px;
+	  text-align: center;
+	  position: relative;
+	  top: 111px;
+	  left: 68px;
+}
+
+
+
+
+	@media all and (max-width:550px ) {
+				header nav {
+				width:80%;
+				height:100%;
+				left:-100%;
+				margin:0;
+				position: fixed;
+				z-index: 16;
+
+			}
+
+			header nav ul li {
+				display:block;
+				float:none;
+				border-bottom:1px solid rgba(255,255,255, .3);
+			}
+
+		.logo{
+		    	width: 15%;
+			    position: relative;
+			    top: -138px;
+			    left: 35px;
+
+		}
+		.menu_bar {
+				display:block;
+				width:100%;
+				background:#ccc;
+			}
+		 
+		.menu_bar .bt-menu {
+				display:block;
+				padding:20px;
+				background:#024959;
+				color:#fff;
+				text-decoration:none;
+				font-weight: bold;
+				font-size:25px;
+				-webkit-box-sizing:border-box;
+				-moz-box-sizing:border-box;
+				box-sizing:border-box;
+				
+			}
+		 
+		.menu_bar span {
+				float:right;
+				font-size:40px;
+
+			}
+		.icon-menu{
+				display: block;
+			}
+
+		.logos{
+			
+			display: block;
+			width: 25%;
+			padding: 15px;
+			text-align: center;
+	}
+	#contact{
+		display: block;
+		padding-top: 15px;
+	}
+	.logos{
+	  float: left;
+	  display: inline;
+	  width: 14%;
+	  padding: 15px;
+	  text-align: center;
+	  position: relative;
+	  top: 52px;
+	  left: 145px;
+}
+
+
+
+}
