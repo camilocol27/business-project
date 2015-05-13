@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+<html>
+<title>South Florida Luxury Market: Residential</title>
+<link rel="stylesheet" type="text/css" href="style/residential.css">
+
+<body>
+	
+	<div id="mainImage">
+		<img src="Images/residential_mainImage.png">
+	</div>
+	<div id="navBg">
+		<ul>
+			<li><a href="index.html">CONTACT</a></li>
+			<li><a href="index.html">COMMERCIAL</a></li>
+			<li class="active"><a href="index.html" >RESIDENTIAL</a></li>
+			<li><a href="index.html">HOME</a></li>	
+			
+		</ul>
+	</div>
+	<header>
+			<div id="logo">
+				<a href="index.html">
+					<img src="Images/sflm_logo_01.png">
+					<h5>SOUTH FLORIDA LUXURY MARKET</h5>
+				</a>
+
+			</div>
+	</header>
+	<div id="wrap">
+
+		<form>
+			<select id="location">
+				<option value="">-Location-</option>
+				<option value="Coral Gables">Coral Gables, FL</option>
+				<option value="Miami Beach">Miami Beach, FL</option>
+
+			</select>
+
+			<select id="price">
+				<option value="">-Price Range-</option>
+				<option value="$500K-$749,999">$500,000-$749,999</option>
+				<option value="$750K-$999,999">$750,000-$999,999</option>
+				<option value="$1M-$1.5M">$1,000,000-$1,500,000</option>
+
+			</select>
+
+			
+			<select id="bed">
+				<option value="">-Bed-</option>
+				<option value="1">1+</option>
+				<option value="2">2+</option>
+				<option value="3">3+</option>
+				<option value="4">4+</option>
+
+			</select>
+
+			<select id="bath">
+				<option value="">-Bath-</option>
+				<option value="1">1+</option>
+				<option value="2">2+</option>
+				<option value="3">3+</option>
+				<option value="4">4+</option>
+
+			</select>
+
+
+			<select id="type">
+				<option value="">-Type-</option>
+				<option value="Condo">Condo</option>
+				<option value="Single Family Home">Single Family Home</option>
+			</select>
+
+			<input type="button" value="Filter Results" onclick="filter()"></input>
+			<input type="reset" value="Show All" onclick="showAll()"></input>
+
+
+
+		</form>
+
+		<div id="listings">
+			<!--
+			<div class="box">
+				<a href="http://www.realtor.com/realestateandhomes-detail/7508-Cutlass-Ave_North-Bay-Village_FL_33141_M60528-91463?row=16" target="_blank">
+					<img src="Images/7508-cutlass-ave-north-bay-village.jpg">
+					<p class="address">7508 Cutlass Ave<br/>
+	North Bay Village, FL</p>
+					<h4 class="cost">$410,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>2</div>
+					<div class="bath"><strong>Ba: </strong>2</div>
+				</a>
+			</div>
+			<div class="box">
+				<a href="http://www.realtor.com/realestateandhomes-detail/Miami_FL_33179_M67677-84243?row=17" target="_blank">
+					<img src="Images/aventura-4bd.jpg">
+					<p class="address">Address Not Available<br/>
+					Aventura, FL</p>
+					<h4 class="cost">$499,900</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>4</div>
+					<div class="bath"><strong>Ba: </strong>2 1/2</div>
+				</a>
+
+			</div>
+			-->
+
+			<div class="box cg house overSevenFiftyThousand fourBed threeBath">
+				<a href="http://www.trulia.com/property/3119832323-650-Alcazar-Ave-Coral-Gables-FL-33134" target="_blank">
+					<img src="Images/650-alcazar-ave-coral-gables.jpg">
+					<p class="address">650 Alcazar Ave<br/>
+					Coral Gables, FL</p>
+					<h4 class="cost">$995,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>4</div>
+					<div class="bath"><strong>Ba: </strong>3</div>
+				</a>
+
+			</div>
+			<div class="box cg house overSevenFiftyThousand threeBed threeBath">
+				<a href="http://www.trulia.com/property/3000044506-528-Majorca-Ave-Coral-Gables-FL-33134" target="_blank">
+					<img src="Images/528-majorca-ave-coral-gables.jpg">
+					<p class="address">528 Majorca Ave<br/>
+					Coral Gables, FL</p>
+					<h4 class="cost">$789,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>3</div>
+					<div class="bath"><strong>Ba: </strong>3</div>
+				</a>
+
+			</div>
+			<div class="box cg house overSevenFiftyThousand threeBed twoBath">
+				<a href="http://www.trulia.com/property/1086357050-1147-Sorolla-Ave-Coral-Gables-FL-33134" target="_blank">
+					<img src="Images/1147-sorolla-ave-coral-gables.jpg">
+					<p class="address">1147 Sorolla Ave<br/>
+					Coral Gables, FL</p>
+					<h4 class="cost">$800,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>3</div>
+					<div class="bath"><strong>Ba: </strong>2</div>
+				</a>
+			</div>
+			<div class="box cg house overSevenFiftyThousand threeBed twoBath">
+				<a href="http://www.trulia.com/property/1079671486-6810-Maynada-St-Coral-Gables-FL-33146" target="_blank">
+					<img src="Images/6810-maynada-st-coral-gables.jpg">
+					<p class="address">6810 Maynada St<br/>
+					Coral Gables, FL</p>
+					<h4 class="cost">$799,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>3</div>
+					<div class="bath"><strong>Ba: </strong>2 1/2</div>
+				</a>
+
+			</div>
+			<div class="box cg house overOneMillion fourBed threeBath">
+				<a href="http://www.trulia.com/property/1036442486-713-Madeira-Ave-Coral-Gables-FL-33134" target="_blank">
+					<img src="Images/713-madeira-ave-coral-gables.jpg">
+					<p class="address">713 Madeira Ave<br/>
+					Coral Gables, FL</p>
+					<h4 class="cost">$1,199,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>4</div>
+					<div class="bath"><strong>Ba: </strong>3</div>
+				</a>
+
+			</div>
+			<div class="box cg house overOneMillion fourBed fourBath">
+				<a href="http://www.trulia.com/property/3192592853-647-Zamora-Ave-Coral-Gables-FL-33134" target="_blank">
+					<img src="Images/647-zamora-ave-coral-gables.jpg">
+					<p class="address">647 Zamora Ave<br/>
+					Coral Gables, FL</p>
+					<h4 class="cost">$1,350,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>4</div>
+					<div class="bath"><strong>Ba: </strong>4</div>
+				</a>
+
+			</div>
+			<div class="box cg house overOneMillion threeBed twoBath">
+					<a href="http://www.trulia.com/property/1031051756-6345-Maynada-St-Coral-Gables-FL-33146" target="_blank">
+					<img src="Images/4210-monserrate-st-coral-gables.jpg">
+					<p class="address">4210 Monserrate St<br/>
+					Coral Gables, FL</p>
+					<h4 class="cost">$1,495,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>3</div>
+					<div class="bath"><strong>Ba: </strong>2 1/2</div>
+				</a>
+			</div>
+
+
+			<div class="box cg house overOneMillion fourBed fourBath">
+					<a href="http://www.trulia.com/property/3185570220-13689-Deering-Bay-Dr-Coral-Gables-FL-33158" target="_blank">
+					<img src="Images/13689-deering-bay-dr-coral-gables.jpg">
+					<p class="address">13689 Deering Bay Dr<br/>
+					Coral Gables, FL</p>
+					<h4 class="cost">$1,475,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>4</div>
+					<div class="bath"><strong>Ba: </strong>4</div>
+				</a>
+			</div>
+
+			<div class="box mb condo overSevenFiftyThousand twoBed twoBath">
+					<a href="http://www.trulia.com/property/3009535289-6515-Collins-Ave-902-Miami-Beach-FL-33141" target="_blank">
+					<img src="Images/6515-collins-ave-902-miami-beach.jpg">
+					<p class="address">6515 Collins Ave #902<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$899,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>2</div>
+					<div class="bath"><strong>Ba: </strong>2</div>
+				</a>
+			</div>
+
+
+			<div class="box mb condo overFiveHundredThousand twoBed twoBath">
+					<a href="http://www.trulia.com/property/3119726732-6039-Collins-Ave-1226-Miami-Beach-FL-33140" target="_blank">
+					<img src="Images/6039-collins-ave-1226-miami-beach.jpg">
+					<p class="address">6039 Collins Ave #1226<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$680,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>2</div>
+					<div class="bath"><strong>Ba: </strong>2</div>
+				</a>
+			</div>
+
+			<div class="box mb condo overFiveHundredThousand twoBed twoBath">
+					<a href="http://www.trulia.com/property/3191215096-1621-Bay-Rd-1201-Miami-Beach-FL-33139" target="_blank">
+					<img src="Images/1621-bay-rd-1201-miami-beach.jpg">
+					<p class="address">1621 Bay Rd #1201<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$599,500</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>2</div>
+					<div class="bath"><strong>Ba: </strong>2</div>
+				</a>
+			</div>
+
+			<div class="box mb condo overFiveHundredThousand oneBed oneBath">
+					<a href="http://www.trulia.com/property/1080790102-1100-West-Ave-Miami-Beach-FL-33139" target="_blank">
+					<img src="Images/1100-west-ave-miami-beach.jpg">
+					<p class="address">1100 West Ave<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$525,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>1</div>
+					<div class="bath"><strong>Ba: </strong>1</div>
+				</a>
+			</div>
+
+			<div class="box mb condo overSevenFiftyThousand oneBed twoBath">
+					<a href="http://www.trulia.com/property/3163092250-520-West-Ave-2003-Miami-Beach-FL-33139" target="_blank">
+					<img src="Images/520-west-ave-2003-miami-beach.jpg">
+					<p class="address">520 West Ave #2003<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$900,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>1</div>
+					<div class="bath"><strong>Ba: </strong>2</div>
+				</a>
+			</div>
+
+			<div class="box mb condo overFiveHundredThousand threeBed twoBath">
+					<a href="http://www.trulia.com/property/3196414796-5900-Collins-Ave-Miami-Beach-FL-33140" target="_blank">
+					<img src="Images/5900-collins-ave-miami-beach.jpg">
+					<p class="address">5900 Collins Ave<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$660,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>3</div>
+					<div class="bath"><strong>Ba: </strong>2</div>
+				</a>
+			</div>
+			<div class="box mb condo overFiveHundredThousand oneBed twoBath">
+					<a href="http://www.trulia.com/property/3141934397-1700-Meridian-Ave-501-Miami-Beach-FL-33139" target="_blank">
+					<img src="Images/1700-meridian-ave-501-miami-beach.jpg">
+					<p class="address">1700 Meridian Ave #501<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$749,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>1</div>
+					<div class="bath"><strong>Ba: </strong>2</div>
+				</a>
+			</div>
+
+			<div class="box mb condo overSevenFiftyThousand twoBed twoBath">
+					<a href="http://www.trulia.com/property/3198793779-11-Island-Ave-Miami-Beach-FL-33139" target="_blank">
+					<img src="Images/11-island-ave-miami-beach.jpg">
+					<p class="address">11 Island Ave<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$770,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>2</div>
+					<div class="bath"><strong>Ba: </strong>2</div>
+				</a>
+			</div>
+
+
+			<div class="box mb condo overFiveHundredThousand twoBed twoBath">
+					<a href="http://www.trulia.com/property/3001206788-1005-8th-St-307-Miami-Beach-FL-33139" target="_blank">
+					<img src="Images/1005-8th-st-307-miami-beach.jpg">
+					<p class="address">1005 8th St #307<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$630,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>2</div>
+					<div class="bath"><strong>Ba: </strong>2 1/2</div>
+				</a>
+			</div>
+
+			<div class="box mb condo overFiveHundredThousand twoBed twoBath">
+					<a href="http://www.trulia.com/property/3196837991-2155-Washington-Ct-404-Miami-Beach-FL-33139" target="_blank">
+					<img src="Images/2155-washington-ct-404-miami-beach.jpg">
+					<p class="address">2155 Washington Ct #404<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$749,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>2</div>
+					<div class="bath"><strong>Ba: </strong>2</div>
+				</a>
+			</div>
+
+			<div class="box mb condo overFiveHundredThousand oneBed oneBath">
+					<a href="http://www.trulia.com/property/3150781214-6899-Collins-Ave-1704-Miami-Beach-FL-33141" target="_blank">
+					<img src="Images/6899-collins-ave-1704-miami-beach.jpg">
+					<p class="address">6899 Collins Ave #1704<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$745,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>1</div>
+					<div class="bath"><strong>Ba: </strong>1</div>
+				</a>
+			</div>
+
+			<div class="box mb condo overOneMillion twoBed twoBath">
+					<a href="http://www.trulia.com/property/3200434859-400-Alton-Rd-709-Miami-Beach-FL-33139" target="_blank">
+					<img src="Images/400-alton-rd-709.jpg">
+					<p class="address">400 Alton Rd #709<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,100,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>2</div>
+					<div class="bath"><strong>Ba: </strong>2</div>
+				</a>
+			</div>
+
+			<div class="box mb condo overOneMillion oneBed oneBath">
+					<a href="http://http://www.trulia.com/property/3144644813-Boulan-South-Beach-220-21st-St-403-Miami-Beach-FL-33139" target="_blank">
+					<img src="Images/220-21st-st-403-miami-beach.jpg">
+					<p class="address">220 21st St #403<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,199,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>1</div>
+					<div class="bath"><strong>Ba: </strong>1 1/2</div>
+				</a>
+			</div>
+
+
+			<div class="box mb condo overOneMillion oneBed twoBath">
+					<a href="http://www.trulia.com/property/3157770663-4401-Collins-Ave-812-Miami-Beach-FL-33140" target="_blank">
+					<img src="Images/4401-collins-ave-812-miami-beach.jpg">
+					<p class="address">4401 Collins Ave #812<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,199,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>1</div>
+					<div class="bath"><strong>Ba: </strong>2</div>
+				</a>
+			</div>
+
+
+			<div class="box mb condo overOneMillion twoBed twoBath">
+					<a href="http://www.trulia.com/property/3199014866-1330-West-Ave-PH05-Miami-Beach-FL-33139" target="_blank">
+					<img src="Images/1330-west-ave-ph05-miami-beach.jpg">
+					<p class="address">1330 West Ave #PH05<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,149,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>2</div>
+					<div class="bath"><strong>Ba: </strong>2</div>
+				</a>
+			</div>
+
+
+			<div class="box mb condo overOneMillion threeBed threeBath">
+					<a href="http://www.trulia.com/property/3001180843-6103-Aqua-Ave-906-Miami-Beach-FL-33141" target="_blank">
+					<img src="Images/6103-aqua-ave-906-miami-beach.jpg">
+					<p class="address">6103 Aqua Ave #906<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,395,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>3</div>
+					<div class="bath"><strong>Ba: </strong>3 1/2</div>
+				</a>
+			</div>
+
+			<div class="box mb condo overOneMillion fourBed fourBath">
+					<a href="http://www.trulia.com/property/3001180843-6103-Aqua-Ave-906-Miami-Beach-FL-33141" target="_blank">
+					<img src="Images/6103-aqua-ave-101-miami-beach.jpg">
+					<p class="address">6103 Aqua Ave #101<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,200,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>4</div>
+					<div class="bath"><strong>Ba: </strong>4 1/2</div>
+				</a>
+			</div>
+
+
+			<div class="box mb condo overOneMillion threeBed threeBath">
+					<a href="http://www.trulia.com/property/3155319244-6000-Collins-Ave-520-Miami-Beach-FL-33140" target="_blank">
+					<img src="Images/6000-collins-ave-520-miami-beach.jpg">
+					<p class="address">6000 Collins Ave #520<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,050,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>3</div>
+					<div class="bath"><strong>Ba: </strong>3</div>
+				</a>
+			</div>
+
+
+			<div class="box mb condo overOneMillion threeBed threeBath">
+					<a href="http://www.trulia.com/property/3167146844-75-N-Shore-Dr-8D-Miami-Beach-FL-33141" target="_blank">
+					<img src="Images/75-n-shore-dr-8D-miami-beach.jpg">
+					<p class="address">75 N Shore Dr #8D<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,129,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>3</div>
+					<div class="bath"><strong>Ba: </strong>3 1/2</div>
+				</a>
+			</div>
+
+			<div class="box mb condo overOneMillion threeBed threeBath">
+					<a href="http://www.trulia.com/property/3117334823-6700-Indian-Creek-Dr-1408-Miami-Beach-FL-33141" target="_blank">
+					<img src="Images/6700-indian-creek-dr-1408-miami-beach.jpg">
+					<p class="address">6700 Indian Creek Dr #1408<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,350,000</h4>
+					<p class="singleFamily">Condo</p>
+					<div class="bed"><strong>Bd: </strong>3</div>
+					<div class="bath"><strong>Ba: </strong>3 1/2</div>
+				</a>
+			</div>
+
+			<div class="box mb house overOneMillion fourBed fiveBath">
+					<a href="http://www.trulia.com/property/3153015476-3098-Alton-Rd-Miami-Beach-FL-33140" target="_blank">
+					<img src="Images/3098-alton-rd-miami-ave-miami-beach.jpg">
+					<p class="address">3098 Alton Rd<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,325,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>4</div>
+					<div class="bath"><strong>Ba: </strong>5 1/2</div>
+				</a>
+			</div>
+
+			<div class="box mb house overOneMillion fourBed threeBath">
+					<a href="http://www.trulia.com/property/3192553370-2865-Fairgreen-Dr-Miami-Beach-FL-33140" target="_blank">
+					<img src="Images/2865-fairgreen-dr-miami-beach.jpg">
+					<p class="address">2865 Fairgreen Dr<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,285,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>4</div>
+					<div class="bath"><strong>Ba: </strong>3</div>
+				</a>
+			</div>
+
+			<div class="box mb house overOneMillion fourBed fourBath">
+					<a href="http://www.trulia.com/property/1068893828-5979-Alton-Rd-Miami-Beach-FL-33140" target="_blank">
+					<img src="Images/5979-alton-rd-miami-beach.jpg">
+					<p class="address">5979 Alton Rd<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,490,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>4</div>
+					<div class="bath"><strong>Ba: </strong>4</div>
+				</a>
+			</div>
+
+			<div class="box mb house overOneMillion fiveBed fourBath">
+					<a href="http://www.trulia.com/property/4093948-4174-Alton-Rd-Miami-Beach-FL-33140" target="_blank">
+					<img src="Images/4174-alton-rd-miami-beach.jpg">
+					<p class="address">4174 Alton Rd<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,249,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>5</div>
+					<div class="bath"><strong>Ba: </strong>4 1/2</div>
+				</a>
+			</div>
+			<div class="box mb house overOneMillion fiveBed fourBath">
+					<a href="http://www.trulia.com/property/3190258404-2345-N-Bay-Rd-Miami-Beach-FL-33140" target="_blank">
+					<img src="Images/2345-n-bay-rd-miami-beach.jpg">
+					<p class="address">2345 N Bay Rd<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,385,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>5</div>
+					<div class="bath"><strong>Ba: </strong>4 1/2</div>
+				</a>
+			</div>
+
+			<div class="box mb house overOneMillion fiveBed threeBath">
+					<a href="http://www.trulia.com/property/3139532168-4431-Nautilus-Dr-Miami-Beach-FL-33140" target="_blank">
+					<img src="Images/4431-nautilus-dr-miami-beach.jpg">
+					<p class="address">4431 Nautilus Dr<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,399,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>5</div>
+					<div class="bath"><strong>Ba: </strong>3</div>
+				</a>
+			</div>
+
+
+			<div class="box mb house overOneMillion fourBed fourBath">
+					<a href="http://www.trulia.com/property/1004539639-3787-Prairie-Ave-Miami-Beach-FL-33140" target="_blank">
+					<img src="Images/3787-prairie-ave-miami-beach.jpg">
+					<p class="address">3787 Prairie Ave<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,190,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>4</div>
+					<div class="bath"><strong>Ba: </strong>4</div>
+				</a>
+			</div>
+
+			<div class="box mb house overOneMillion fiveBed fourBath">
+					<a href="http://www.trulia.com/property/3170575687-810-Barry-St-Miami-Beach-FL-33140" target="_blank">
+					<img src="Images/810-barry-st-miami-beach.jpg">
+					<p class="address">810 Barry St<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$1,075,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>5</div>
+					<div class="bath"><strong>Ba: </strong>4</div>
+				</a>
+			</div>
+
+			<div class="box mb house overSevenFiftyThousand threeBed twoBath">
+					<a href="http://www.trulia.com/property/3194401499-395-Fairway-Dr-Miami-Beach-FL-33141" target="_blank">
+					<img src="Images/395-fairway-dr-miami-beach.jpg">
+					<p class="address">395 Fairway Dr<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$950,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>3</div>
+					<div class="bath"><strong>Ba: </strong>2</div>
+				</a>
+			</div>
+
+			<div class="box mb house overSevenFiftyThousand threeBed threeBath">
+					<a href="http://www.trulia.com/property/3055903088-4190-Alton-Rd-Miami-Beach-FL-33140" target="_blank">
+					<img src="Images/4190-alton-rd-miami-beach.jpg">
+					<p class="address">4190 Alton Rd<br/>
+					Miami Beach, FL</p>
+					<h4 class="cost">$799,000</h4>
+					<p class="singleFamily">Single Family Home</p>
+					<div class="bed"><strong>Bd: </strong>3</div>
+					<div class="bath"><strong>Ba: </strong>3</div>
+				</a>
+			</div>
+
+
+		</div>
+
+	</div>
+	<div id="footer">
+		&copy; 2015 SFLM. All Rights Reserved. Website Designed and Developed by Cristian and <a href="http://nycda.zone/roberts23/" target="_blank">Tameka</a>
+	</div>
+
+<script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="Script/residential.js"></script>
+
+</body>
+
+
+
+</html>

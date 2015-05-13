@@ -1,0 +1,109 @@
+html {
+	background: url('../Images/miami-aerial-view-1.jpg') top center no-repeat #0D4F8B;
+}
+html, body {
+	font-family: sans-serif;
+	margin: 0 auto;
+}
+#navBg {
+	background: rgba(255,255,255,.8);
+	border-top: outset 1px #989898;
+  	border-bottom: inset 1px #989898;
+	margin-top: 1%;
+	padding: 1% 0px;
+	position: relative;
+}
+#navBg ul {
+	padding: 0px;
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 950px;
+	position: relative;
+	z-index: 1000;
+	width: 100%;
+}
+#navBg ul {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 100%;
+}
+#navBg ul li {
+  display: block;
+  float: right;
+  overflow: hidden;
+  width: 19%;
+  text-align: center;
+}
+#navBg ul li a {
+	color: darkgreen;
+	font-family: serif;
+  	text-decoration: none;
+}
+#navBg ul li a:hover, #navBg ul .active a {
+	color: #333;
+	/*color: maroon;*/
+	text-decoration: underline;
+}
+header {
+	margin: 0 auto;
+	max-width: 950px;
+	position: relative;
+	width: 100%;
+}
+header #logo {
+	cursor: pointer;
+	margin-left: 1%;
+	margin-top: -8%;
+	max-width: 250px;
+	overflow: hidden;
+	width: 100%;
+}
+header #logo img {
+	width: 100%;
+}
+header #logo a {
+	color: #e1e1e1;
+	font-family: Helvetica;
+	text-decoration: none;
+}
+header #logo h5 {
+	padding-bottom: 5px;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 5px;
+	background: rgba(0,0,0,.7);
+	margin-top: 0px;
+	text-align: center;
+	width: 98%;
+}
+#wrap {
+	margin: 0% auto auto;
+	max-width: 950px;
+  	padding: 2% 2% 10% 2%;
+  	position: relative;
+	overflow: hidden;
+	width: 96%;
+}
+#wrap h1{
+	color: powderblue;
+	font-size: 36px;
+	text-align: center;
+	text-shadow: -2px 2px 30px #000;
+}
+#footer a {
+	color: sienna;
+	text-decoration: underline;
+}
+#footer {
+	background: rgba(255,255,255,.8);
+  	border-top: outset 1px #989898;
+  	border-bottom: inset 1px #989898;
+	color: #444;
+	bottom: 0px;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+
+}
